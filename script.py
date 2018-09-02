@@ -37,14 +37,20 @@ try:
 	password.send_keys(password)
 	signInButton = browser.find_element_by_name(element_for_submit)
 	signInButton.click()
-	time.sleep(3)
-	browser.quit()
-	time.sleep(1)
-	browserExe = "Safari"
-	os.system("pkill "+browserExe)
+	
+	#### to quit the browser uncomment the following lines ####
+	# time.sleep(3)
+	# browser.quit()
+	# time.sleep(1)
+	# browserExe = "Safari"
+	# os.system("pkill "+browserExe)
 except Exception:
-	browser.quit()
-	browserExe = "Safari"
-	os.system("pkill "+browserExe)
+	#### This exception occurs if the element are not found in the webpage.
+	print "Some error occured :("
+
+	#### to quit the browser uncomment the following lines ####
+	# browser.quit()
+	# browserExe = "Safari"
+	# os.system("pkill "+browserExe)
 
 
