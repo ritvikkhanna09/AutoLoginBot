@@ -1,5 +1,5 @@
 # AutoLoginBot
-This bot will help you in automatically logging in you account of the desired website or webpage when run. It basicaaly saves time and energy of typing the username and password again and again.
+This bot will help you in automatically logging in you account of the desired website or webpage when run. It basically saves time and energy of typing the username and password again and again.
 P.S. I used it to login into my college's wifi network.
 
 ### How to use
@@ -14,6 +14,6 @@ P.S. I used it to login into my college's wifi network.
 
 (Optional)
 
-As I wanted the automation to be a click easy, I created a Automator(only for macOS users) that just runs the python file when clicked.
+As I wanted the automation to be a click easy, I created a Automator (only for macOS users) that just runs the python file when clicked.
 
 ###### Created by Ritvik Khanna
