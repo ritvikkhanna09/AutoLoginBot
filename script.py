@@ -28,13 +28,14 @@ element_for_submit=""
 
 
 browser = webdriver.Safari()	#for macOS users[for others use chrome vis chromedriver]
+#browser = webdriver.Chrome()	#uncomment this line,for chrome users
 browser.get((website_link))	
 
 try:
-	username = browser.find_element_by_name(element_for_username)
-	username.send_keys(username)		
-	password  = browser.find_element_by_name(element_for_password)
-	password.send_keys(password)
+	username_element = browser.find_element_by_name(element_for_username)
+	username_element.send_keys(username)		
+	password_element  = browser.find_element_by_name(element_for_password)
+	password_element.send_keys(password)
 	signInButton = browser.find_element_by_name(element_for_submit)
 	signInButton.click()
 	
