@@ -47,7 +47,7 @@ try:
 	# os.system("pkill "+browserExe)
 except Exception:
 	#### This exception occurs if the element are not found in the webpage.
-	print "Some error occured :("
+	print("Some error occured :(")
 
 	#### to quit the browser uncomment the following lines ####
 	# browser.quit()
