@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.firefox import GeckoDriverManager
 import time
 import os
 
@@ -25,8 +26,7 @@ element_for_submit=""
 
 ###########################################################
 
-
-
+browser = webdriver.Firefox(executable_path=GeckoDriverManager().install())	#for Firefox user
 browser = webdriver.Safari()	#for macOS users[for others use chrome vis chromedriver]
 #browser = webdriver.Chrome()	#uncomment this line,for chrome users
 browser.get((website_link))	
